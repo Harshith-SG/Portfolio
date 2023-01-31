@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(8, 20, 69, 0.7),rgba(52, 91, 18, 0.667)),url(images/Campus.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    /* padding: 1% 2%; */
+    justify-content: space-between;
+    align-items: center;
+    background: #0000007e;
+    position: sticky;
+    top: 0;
+}
+nav img{
+    width: 100px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+    box-sizing: content-box;
+    
+}
+.nav-links ul li{
+    font-family: 'Georgia';
+    list-style: none;
+    display: inline-block;
+    padding: 2px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+}
+.centertext{
+    width: 90%;
+    color: #fff;
+    position: absolute; 
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.centertext h6{
+    font-size: 50px;
+    font-family: 'Georgia';
+   
+}
+.centertext p{
+    padding-top: 10%;
+    font-size: 20px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 4px;
+    background: #e65a28;
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.about{
+    height: 120vh;
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    background-color: rgba(243,239,228,255);
+    background-size: cover;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    padding: 50px 0px;
+   
+}
+ .about h1{
+     /* width: 90%;
+    color: rgb(0, 0, 0);
+    position: absolute; 
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center; */
+    font-size: 50px;
+}
+.about p{
+    font-size: 25px;
+    /* color: #5b5b59; */
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+/*
+.about p1{
+    width: 90%;
+    color: rgb(0, 0, 0);
+    position: absolute; 
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-size: 20px;
+}
+.about p2{
+    width: 90%;
+    color: rgb(0, 0, 0);
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-size: 20px;
+} */
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.about .cols{
+    margin-left: 20px;
+    margin-right: 20px;
+    flex-basis: 31%;
+    background: #fff;
+    border-radius: 20px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    font-size: 26px;
+}
+.cols p{
+    font-size: 23px;
+    
+}
+.cols:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+.skills{
+    height: 110vh;
+    width: 100%;
+    background-color: rgba(41,65,59,255);
+     /* rgba(53, 28, 192, 0.436); */
+    background-size: cover;
+    margin: auto;
+    /* flex-basis: 10%; */
+    position: relative;
+    text-align: center;
+    padding-top: 40px;
+    
+}
+.skills h1{
+    font-size: 80px;
+    color: #fff;
+}
+.skills p1{
+    font-size: 24px;
+    color: #fff;
+    left: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+.skills .cols{
+    background: rgba(197,220,46);
+    flex-basis: 31%;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 20px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.skills p{
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+.skills p4{
+    font-size: 18px;
+}
+.footer{
+    padding: 5px 0;
+    height: fit-content;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.888);
+    color: rgb(228, 146, 14);
+    position: relative;
+}
+h4{
+    font-size: 40px;
+    text-align: center;   
+}
+.address{
+    position: absolute;
+    right: 0%;
+    text-align: right;
+    padding-right: 2%;
+}
+h5{
+    /* text-align: right; */
+    font-size: 20px;
+    /* font-weight: 500; */
+
+}
+p{
+    /* text-align: right; */
+    font-size: 15px;
+}
+.rowicon{
+    margin-top: 20px;
+    /* margin-left: 5%; */
+    display: flex;
+    flex-basis: 10%;
+    justify-content: left;
+    padding: 0px 12px 0sssssssspx;
+    /* padding-left: 20%; */
+    padding-right: 20%;
+    /* position: re; */
+}
+.icons{
+    padding-left: 2%;
+    /* position: ; */
+}
+.icons h1{
+    text-align: left;
+    font-size: 20px;
+}
+.icons img{
+    width: 40px;
+    padding-right: 20px;
+}
+
+
+
+
+
+
+
+
+
